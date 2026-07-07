@@ -2,19 +2,22 @@
 
 number_1=int(input("Введите первое число:"))
 user_select=input("Выберите действие (+, -, *, /):")
-number_2=int(input("Введите второе число:"))
 
 match user_select:
     case "+":
+        number_2 = int(input("Введите второе число:"))
         addition=number_1+number_2
         print(addition)
     case "-":
+        number_2 = int(input("Введите второе число:"))
         subtraction=number_1-number_2
         print(subtraction)
     case "*":
+        number_2 = int(input("Введите второе число:"))
         multiplication=number_1*number_2
         print(multiplication)
     case "/":
+        number_2 = int(input("Введите второе число:"))
         if number_2 == 0:
             print("Ошибка, на ноль делить нельзя!")
         else:
@@ -23,6 +26,29 @@ match user_select:
     case _:
         print("Ошибка, выберите действие")
 
+###
+# number_1=int(input("Введите первое число:"))
+# user_select=input("Выберите действие (+, -, *, /):")
+# number_2=int(input("Введите второе число:"))
+#
+# match user_select:
+#     case "+":
+#         addition=number_1+number_2
+#         print(addition)
+#     case "-":
+#         subtraction=number_1-number_2
+#         print(subtraction)
+#     case "*":
+#         multiplication=number_1*number_2
+#         print(multiplication)
+#     case "/":
+#         if number_2 == 0:
+#             print("Ошибка, на ноль делить нельзя!")
+#         else:
+#             division=number_1/number_2
+#             print(division)
+#     case _:
+#         print("Ошибка, выберите действие")
 
 ################ Первый вариант:
 
