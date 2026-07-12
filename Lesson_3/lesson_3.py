@@ -165,7 +165,7 @@
 # # v2
 # number_a = 10 if number_b < 5 else 20
 # print(number_a)
-# 55 минута примерно!
+# 55 минута примерно в уроке 3!
 # number = 2
 # if number
 
@@ -186,7 +186,7 @@
 #################################################################
 # list
 # numbers = []
-# или так писать, лучше []
+## или так писать, лучше []
 # numbers_1 = list()
 # print(type(numbers))
 # print(type(numbers_1))
@@ -207,7 +207,8 @@
 # print(len(numbers)) # показать колличесво в списке
 # print(numbers[-1])
 # #
-# print(numbers[len(numbers)])  # numbers[6] -> error
+# print(numbers[len(numbers)])
+# numbers[6] -> error
 # print(numbers[len(numbers) -1])
 
 
@@ -232,6 +233,7 @@
 # print(numbers[::-1]) # задом напереед
 # print(numbers[5::-1])
 # print(numbers[5:0:-1])
+
 # # 1.від, 2.до, 3.крок
 
 # Розкладання списку (декомпозиція)
@@ -250,7 +252,7 @@
 # #
 # # # insert(index, item): додає елемент item до списку за індексом index
 # #
-# numbers.insert(1, 3333)
+# numbers.insert(0, 3333)
 # print(numbers)
 # #
 # # # extend(items): додає набір елементів items до кінця списку
@@ -306,7 +308,7 @@
 # print(numbers)
 
 # people = ["Tom", "bob", "alice", "Sam", "Bill"]
-# v1
+# # v1
 # people.sort()
 # print(people)
 # # v2
@@ -353,18 +355,16 @@
 # print(max(letters))
 
 ###############
-# text = "hello world. goodbye world."
+# text = "helLo woRld. goodbye world."
 # search_item = ". "
-#
+# # text.split() Ищет точку с пробелом для разделения строки. Строка превращается в список из двух элементов.
 # sentences = text.split(search_item)
 # print(sentences)
-#
 # result = []
-#
+# # .capitalize(): Преобразует первый символ строки в верхний регистр, а все остальные символы делает строчными
 # for sentence in sentences:
 #     result.append(sentence.capitalize())
-#
-# print(result)
+# # pri.capitalize(): Преобразует первый символ строки в верхний регистр, а все остальные символы делает строчнымиnt(result)
 #
 # result_sentence = search_item.join(result)
 # print(result_sentence)
@@ -399,15 +399,15 @@
 # Важливо! Потрібно створити рішення, яке обробляє 3 випадки - список порожній,
 # у списку парна кількість елементів і в списку непарна кількість елементів.
 
-# nums = []
-# middle_index = len(nums) // 2
-#
-# if len(nums) % 2 != 0:
-#     middle_index += 1
-#
-# part1 = nums[:middle_index]
-# part2 = nums[middle_index:]
-# print(part1)
-# print(part2)
-# result = [part1, part2]
-# print(result)
+nums = []
+middle_index = len(nums) // 2
+
+if len(nums) % 2 != 0:
+    middle_index += 1 # это тоже самое что middle_index=middle_index=1
+
+part1 = nums[:middle_index]
+part2 = nums[middle_index:]
+print(part1)
+print(part2)
+result = [part1, part2]
+print(result)
